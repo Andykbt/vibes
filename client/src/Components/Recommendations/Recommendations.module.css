@@ -1,0 +1,85 @@
+@import url("https://use.typekit.net/hmr0jlb.css");
+@import url("https://use.typekit.net/hmr0jlb.css");
+
+.container {
+  overflow: auto;
+  padding: 15px;
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+
+.box {
+  justify-content: space-around;
+  display: flex;
+  width: 856px;
+}
+
+.box article {
+  display: inherit;
+  height: 96px;
+  width: 96px;
+}
+
+.box article img {
+  transition: 0.25s ease-in all;
+  border-radius: 15%;
+  width: 100%;
+  height: auto;
+}
+
+.box article:hover img {
+  opacity: 0.65;
+}
+
+article a {
+  text-decoration: none;
+}
+
+.rightContainer {
+  height: max-content !important;
+  width: 100px !important;
+  justify-content: center;
+  flex-direction: column;
+  position:fixed;
+  display: flex;
+  top: -17.5em;
+}
+
+.rightContainer img {
+  border: solid 0.25em var(--color-main);
+  border-radius: 0 !important;
+  width: 96px;
+  height: 96px;
+}
+
+.rightContainer h1, .rightContainer p {
+  padding-left: 0.5em;
+  max-height: 2.5em;
+  overflow: hidden;
+  display: block;
+}
+
+.rightContainer h1 {
+  font-family: archivo-black, sans-serif;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: black;
+}
+
+.rightContainer p {
+  font-family: poppins, sans-serif;
+  color: var(--color-main);
+  line-height: 1.25em;
+  margin-top: 0.5em;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+@media only screen and (max-width: 425px) {
+  .rightContainer {
+    display: none;
+  }
+  
+}

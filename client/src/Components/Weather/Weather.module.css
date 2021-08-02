@@ -1,0 +1,61 @@
+@import url("https://use.typekit.net/hmr0jlb.css");
+@import url("https://use.typekit.net/hmr0jlb.css");
+
+.container {
+  position: relative;
+  background-color: red;
+  width: min-content;
+  height: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.temp, .city {
+  font-family: archivo-black, sans-serif;
+  width: fit-content;
+  font-weight: 400;
+  font-style: normal;
+  text-align: right;
+}
+
+.temp {
+  font-size: 52px;
+  margin: 0 0 5px;
+}
+
+.city, .secondary {
+  font-size: 16px;
+}
+
+.secondaryContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
+}
+
+.secondary {
+  display: flex;
+  justify-content: flex-start;
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.secondary svg {
+  min-width: 1em;
+}
+
+.secondary span {
+  text-align: left;
+  margin-left: 25px;
+}
+
+@media only screen and (max-width: 1224px) {
+  .secondaryContainer {
+    margin-top: 35%;
+  }
+}

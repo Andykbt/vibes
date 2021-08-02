@@ -1,0 +1,7 @@
+.Centerpiece {
+    /* transform-origin: center; */
+    position: fixed;
+    z-index: -1;
+    left: 50%;
+    top: -5%;
+}

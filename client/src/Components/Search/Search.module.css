@@ -1,0 +1,151 @@
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+.searchbox {
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    margin: auto;
+    z-index: 1;
+}
+
+.searchbox input[type=text] {
+    padding: 25px;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.searchbox button {
+    outline: none;
+    border: none;
+    font-family: "Font Awesome 5 Free";
+    background-color: #FFCB31;
+    border-radius: 50%;
+    margin: 17px 10px;
+    font-weight: 900;
+    padding: 15px 16px;
+    cursor: pointer;
+}
+
+.searchbox button:active {
+    background-color: #e6b420;
+}
+
+.searchbox button.sub::before {
+    content: "\f002";
+}
+
+.searchbox button.refresh {
+    margin: 5% 2.5%;
+    font-size: 150%;
+
+    -webkit-animation: rotateIcon 1s forwards ease-in;
+    -moz-animation: rotateIcon 1s forwards ease-in;
+    -ms-animation: rotateIcon 1s forwards ease-in;
+    -o-animation: rotateIcon 1s forwards ease-in;
+    animation: rotateIcon 1s forwards ease-in;
+}
+
+.searchbox button.refresh.spin {
+    -webkit-animation: rotateIcon 1s linear infinite;
+    -moz-animation: rotateIcon 1s linear infinite;
+    -ms-animation: rotateIcon 1s linear infinite;
+    -o-animation: rotateIcon 1s linear infinite;
+    animation: rotateIcon 1s linear infinite;
+}
+
+.searchbox button.refresh::before {
+    content: "\f2f1";
+    left: 50%;
+    top: 50%;
+}
+
+.resultsContainer {
+    background-color:rgba(0, 0, 0, 0.40);
+    position: relative;
+    padding-top: 10px;
+    top: -10px;
+    max-height: 25vh;
+    overflow-y: scroll;
+    border-radius: 0 0 25px 25px;
+}
+
+/* width */
+.resultsContainer::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+.resultsContainer::-webkit-scrollbar-track {
+    background-color: #514A48;
+    border-radius: 25px;
+    margin: 50px;
+}
+   
+  /* Handle */
+.resultsContainer::-webkit-scrollbar-thumb {
+    background-color: #AAFFFB;
+    border-radius: 25px;
+}
+  
+/* Handle on hover */
+.resultsContainer::-webkit-scrollbar-thumb:hover {
+    background: #83d8d4; 
+}
+
+section a {
+    padding: 1vw;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;   
+    display: block;
+    color: white;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.65s all;
+}
+
+section a:hover {
+    background-color:rgba(0, 0, 0, 0.40);
+}
+
+@-webkit-keyframes rotateIcon /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotateIcon {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+@media only screen and (max-width: 500px) {
+    .searchbox input[type=text] {
+        font-size: 1rem;
+        padding-right: 0;   
+    }
+}
